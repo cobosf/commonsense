@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>COMMON SENSE</title>
+
+<style>
+
+:root{
+    --paper:#f3efe7;
+    --paper-dark:#ebe4d7;
+    --text:#111111;
+    --muted:#6d6d6d;
+    --border:#d9d2c7;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:var(--paper);
+    color:var(--text);
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(243,239,231,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--border);
+    z-index:100;
+}
+
+.nav-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-weight:700;
+    letter-spacing:-1px;
+    font-size:1rem;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+    font-size:.95rem;
+}
+
+.menu a{
+    color:var(--muted);
+    transition:.2s;
+}
+
+.menu a:hover{
+    color:var(--text);
+}
+
+.hero{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding-top:160px;
+    padding-bottom:90px;
+}
+
+.hero h1{
+    font-size:7rem;
+    line-height:.9;
+    letter-spacing:-6px;
+    margin-bottom:24px;
+}
+
+.tagline{
+    font-size:1.4rem;
+    font-weight:600;
+    margin-bottom:12px;
+}
+
+.description{
+    max-width:650px;
+    color:var(--muted);
+    font-size:1.05rem;
+}
+
+.gallery-section{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding-bottom:120px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+    gap:40px;
+}
+
+.card{
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+}
+
+.image-wrapper{
+    overflow:hidden;
+    border-radius:24px;
+    background:white;
+    border:1px solid var(--border);
+}
+
+.image-wrapper img{
+    width:100%;
+    display:block;
+}
+
+.meta{
+    margin-top:18px;
+}
+
+.number{
+    color:var(--muted);
+    font-size:.85rem;
+    font-weight:700;
+    letter-spacing:.08em;
+    margin-bottom:10px;
+}
+
+.quote{
+    font-size:1.3rem;
+    line-height:1.35;
+    font-weight:600;
+    letter-spacing:-0.03em;
+}
+
+.about{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding-bottom:120px;
+}
+
+.about-box{
+    background:rgba(255,255,255,.45);
+    border:1px solid var(--border);
+    border-radius:28px;
+    padding:50px;
+}
+
+.about-box h2{
+    font-size:2rem;
+    letter-spacing:-2px;
+    margin-bottom:20px;
+}
+
+.about-box p{
+    color:#444;
+    max-width:800px;
+}
+
+footer{
+    border-top:1px solid var(--border);
+    padding:50px;
+    text-align:center;
+    color:var(--muted);
+}
+
+@media(max-width:768px){
+
+    .hero{
+        padding-top:130px;
+    }
+
+    .hero h1{
+        font-size:4rem;
+        letter-spacing:-3px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .menu{
+        gap:16px;
+        font-size:.85rem;
+    }
+
+    .about-box{
+        padding:30px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-container">
+
+        <div class="logo">
+            COMMON SENSE
+        </div>
+
+        <div class="menu">
+            <a href="#archive">Archive</a>
+            <a href="#about">About</a>
+            <a href="https://fcobos.com">fcobos.com</a>
+        </div>
+
+    </div>
+</nav>
+
+<section class="hero">
+
+    <h1>
+        COMMON<br>
+        SENSE
+    </h1>
+
+    <div class="tagline">
+        Still underused.
+    </div>
+
+    <p class="description">
+        Observations about things we all see and pretend not to.
+    </p>
+
+</section>
+
+<section id="archive" class="gallery-section">
+
+    <div class="gallery">
+
+        <a href="001.html" class="card">
+
+            <div class="image-wrapper">
+                <img src="img/001.PNG" alt="Common Sense #001">
+            </div>
+
+            <div class="meta">
+                <div class="number">#001</div>
+
+                <div class="quote">
+                    You left the escalator.<br>
+                    We didn't.
+                </div>
+            </div>
+
+        </a>
+
+        <a href="002.html" class="card">
+
+            <div class="image-wrapper">
+                <img src="img/002.PNG" alt="Common Sense #002">
+            </div>
+
+            <div class="meta">
+                <div class="number">#002</div>
+
+                <div class="quote">
+                    You joined a new company.<br>
+                    Not a blank page.
+                </div>
+            </div>
+
+        </a>
+
+        <a href="003.html" class="card">
+
+            <div class="image-wrapper">
+                <img src="img/003.PNG" alt="Common Sense #003">
+            </div>
+
+            <div class="meta">
+                <div class="number">#003</div>
+
+                <div class="quote">
+                    Intelligence isn't immunity.
+                </div>
+            </div>
+
+        </a>
+
+        <a href="004.PNG" class="card">
+
+            <div class="image-wrapper">
+                <img src="img/004.PNG" alt="Common Sense #004">
+            </div>
+
+            <div class="meta">
+                <div class="number">#004</div>
+
+                <div class="quote">
+                    You came to solve a problem.<br>
+                    He came to win.
+                </div>
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+<section id="about" class="about">
+
+    <div class="about-box">
+
+        <h2>About</h2>
+
+        <p>
+            Common Sense is a collection of visual observations about
+            work, technology, leadership and everyday human behaviour.
+            Some are inspired by real situations.
+            Most are preventable.
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+
+COMMON SENSE · Still underused.
+
+<br><br>
+
+© Francisco Cobos
+
+<br><br>
+
+<a href="legal.html">Legal</a>
+
+</footer>
+
+</body>
+</html>
